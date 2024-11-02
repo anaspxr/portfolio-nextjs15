@@ -4,7 +4,7 @@ import { MdMail } from "react-icons/md";
 
 export default function About() {
   return (
-    <div className="mx-4 sm:mx-12 mb-8 md:mx-20 lg:mx-32">
+    <section id="about" className="mx-4 sm:mx-12 mb-8 md:mx-20 lg:mx-32">
       <h2 className="text-3xl font-bold">About Me</h2>
       <div
         className={`my-2 h-1 bg-violet-800 transition-[width] duration-700 ease-in-out`}></div>
@@ -40,6 +40,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

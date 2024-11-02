@@ -17,20 +17,20 @@ export default function Hero() {
         </h1>
         <HeroTyped />
         <div className="flex justify-center items-center gap-4">
-          <ShineButton className="text-sm md:text-base w-40 py-4">
-            <a
-              className="inline-flex items-center justify-center h-full w-full"
-              href="#about">
+          <a
+            className="inline-flex items-center justify-center h-full w-full"
+            href="#about">
+            <ShineButton className="text-sm md:text-base w-40 py-4">
               About Me
-            </a>{" "}
-          </ShineButton>
-          <ShineButton className="text-sm md:text-base w-40 py-4">
-            <a
-              className="inline-flex items-center justify-center h-full w-full"
-              href="#contact">
+            </ShineButton>
+          </a>
+          <a
+            className="inline-flex items-center justify-center h-full w-full"
+            href="#contact">
+            <ShineButton className="text-sm md:text-base w-40 py-4">
               Contact Me
-            </a>
-          </ShineButton>
+            </ShineButton>
+          </a>
         </div>
       </div>
     </section>

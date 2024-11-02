@@ -1,6 +1,8 @@
 export default function Skills() {
   return (
-    <div className="mx-4 sm:mx-12 mb-8 md:mx-20 lg:mx-32 p-4 bg-black ">
+    <section
+      id="skills"
+      className="mx-4 sm:mx-12 mb-8 md:mx-20 lg:mx-32 p-4 bg-black bg-opacity-50 border rounded-md border-opacity-50 border-purple-500">
       <h2 className="text-3xl text-center">My skills</h2>
       <div
         className={`my-2 h-1 w-32 m-auto bg-violet-800 transition-[width] duration-700 ease-in-out`}></div>
@@ -34,6 +36,6 @@ export default function Skills() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
