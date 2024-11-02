@@ -7,8 +7,13 @@ export default function Hero() {
       <div className="bg-no-repeat bg-fixed bg-cover bg-center h-screen absolute top-0 left-0 w-full -z-30"></div>
       {/* dark overlay */}
       <div className="flex justify-center flex-col items-center h-screen gap-8">
-        <h1 className="text-7xl text-white font-semibold">
-          Hi, I&apos;m <span className="text-violet-200 font-bold">ANAS</span>
+        <h1 className=" text-white font-semibold">
+          <span className="text-4xl sm:text-5xl md:text-6xl">
+            Hi, I&apos;m{" "}
+          </span>
+          <span className="text-violet-200 font-bold text-5xl sm:text-6xl md:text-7xl">
+            ANAS
+          </span>
         </h1>
         <HeroTyped />
         <div className="flex justify-center items-center gap-4">
