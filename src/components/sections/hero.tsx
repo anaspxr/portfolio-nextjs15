@@ -32,6 +32,14 @@ export default function Hero() {
             </ShineButton>
           </a>
         </div>
+        <a
+          href="ANAS-P-Resume.pdf"
+          download="ANAS-P-Resume.pdf"
+          className="inline-flex items-center justify-center">
+          <ShineButton className="text-sm md:text-base w-80 py-4 border-purple-900 bg-purple-900 hover:shadow-purple-500 hover:border-purple-700 shadow-purple-900 shad hover:before:-translate-x-80">
+            Download Resume
+          </ShineButton>
+        </a>
       </div>
     </section>
   );
