@@ -1,3 +1,6 @@
+import { skills } from "@/lib/skills";
+import Image from "next/image";
+
 export default function Skills() {
   return (
     <section
@@ -6,35 +9,23 @@ export default function Skills() {
       <h2 className="text-3xl text-center">My skills</h2>
       <div
         className={`my-2 h-1 w-32 m-auto bg-violet-800 transition-[width] duration-700 ease-in-out`}></div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
-        <div>
-          <p className="text-2xl text-violet-200 my-2">Frontend</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Next.js</li>
-          </ul>
-        </div>
-        <div>
-          <p className="text-2xl text-violet-200 my-2">Backend</p>
-          <ul>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-        <div>
-          <p className="text-2xl text-violet-200 my-2">Tools</p>
-          <ul>
-            <li>Git</li>
-            <li>VS Code</li>
-            <li>Postman</li>
-            <li>Netlify</li>
-            <li>Heroku</li>
-          </ul>
-        </div>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 m-auto justify-center">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className=" p-4 flex items-center justify-center hover:scale-105 transition-transform  bg-violet-500 bg-opacity-20 rounded-md">
+            <div className="flex flex-col items-center">
+              <Image
+                height={512}
+                width={512}
+                src={skill.icon}
+                alt={skill.name}
+                className="h-16 w-16 object-contain"
+              />
+              <p className="text-center text-white">{skill.name}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
