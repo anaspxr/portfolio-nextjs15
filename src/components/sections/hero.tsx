@@ -3,7 +3,7 @@ import ShineButton from "@/components/ui/ShineButton";
 
 export default function Hero() {
   return (
-    <section id="home">
+    <section id="home" className="animate-fadeIn">
       <div className="bg-no-repeat bg-fixed bg-cover bg-center h-screen absolute top-0 left-0 w-full -z-30"></div>
       {/* dark overlay */}
       <div className="flex justify-center flex-col items-center h-screen gap-8">
@@ -15,7 +15,9 @@ export default function Hero() {
             ANAS
           </span>
         </h1>
-        <HeroTyped />
+        <div className="min-h-8">
+          <HeroTyped />
+        </div>
         <div className="flex justify-center items-center gap-4">
           <a
             className="inline-flex items-center justify-center h-full w-full"

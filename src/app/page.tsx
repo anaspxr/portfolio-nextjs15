@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <div className="max-w-screen-2xl m-auto">
+        <About />
+        <Skills />
+        <Projects />
+      </div>
     </div>
   );
 }

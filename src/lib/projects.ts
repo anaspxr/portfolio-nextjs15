@@ -31,7 +31,7 @@ export const projects = [
   {
     name: "Cool UI Designs",
     description:
-      "A collection of cool UI designs that can be used as inspiration for web and mobile applications. It is a platform that allows users to view and download UI designs for web and mobile applications.",
+      "A collection of cool UI designs that can be used as inspiration for web and mobile applications. It is a platform that allows users to view and download UI designs for web and mobile applications. It is still in development",
     image: "/project-images/ui-designs.png",
     links: {
       github: "https://github.com/anaspxr/cool-ui-designs",
