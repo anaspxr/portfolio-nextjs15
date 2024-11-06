@@ -1,5 +1,6 @@
 import HeroTyped from "@/components/ui/HeroTyped";
 import ShineButton from "@/components/ui/ShineButton";
+import HeroSocialLinks from "../ui/HeroSocialLinks";
 
 export default function Hero() {
   return (
@@ -18,6 +19,7 @@ export default function Hero() {
         <div className="min-h-8">
           <HeroTyped />
         </div>
+        <HeroSocialLinks />
         <div className="flex justify-center items-center gap-4">
           <a
             className="inline-flex items-center justify-center h-full w-full"
