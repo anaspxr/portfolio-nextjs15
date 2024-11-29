@@ -11,10 +11,7 @@ export default function Projects() {
       className="mx-2 my-20 sm:mx-12 mb-8 md:mx-20 lg:mx-32 p-4 bg-black bg-opacity-50 border rounded-md border-opacity-50 border-violet-500">
       <h2 className="text-3xl text-center mb-2">Projects</h2>
       <div
-        className={`mb-2 h-1 w-40 m-auto bg-violet-800 transition-[width] duration-700 ease-in-out`}></div>
-      <p className="text-center mb-4">
-        Some of the projects i have worked on..
-      </p>
+        className={`mb-8 h-1 w-40 m-auto bg-violet-800 transition-[width] duration-700 ease-in-out`}></div>
 
       <div className="grid sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (

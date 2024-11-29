@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Comfort Craft",
     description:
-      "A furniture E-commerce web application that allows users to view and purchase furniture items. It is a platform that allows users to search for furniture items, view item details, and purchase items.",
+      "A furniture E-commerce web application that allows users to view and purchase furniture items. Streamlined checkout process with payment integration with.",
     image: "/project-images/comfortcraft.png",
     links: {
       github: "https://github.com/anaspxr/e-commerce-with-redux",
@@ -12,7 +12,7 @@ export const projects = [
   {
     name: "DOQUE",
     description:
-      "A comprehensive task management web application that allows users to create, assign, and track tasks. It is a platform that allows users to create tasks, assign tasks to team members, and track task progress.",
+      "A comprehensive project management web application that allows users to create, assign, and track tasks.",
     image: "/project-images/doque.png",
     links: {
       github: "https://github.com/anaspxr/project-doque",
@@ -31,7 +31,7 @@ export const projects = [
   {
     name: "Cool UI Designs",
     description:
-      "A collection of cool UI designs that can be used as inspiration for web and mobile applications. It is a platform that allows users to view and download UI designs for web and mobile applications. It is still in development",
+      "A collection of cool UI designs that can be used as inspiration for web and mobile applications. It is still in development",
     image: "/project-images/ui-designs.png",
     links: {
       github: "https://github.com/anaspxr/cool-ui-designs",
