@@ -12,3 +12,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
