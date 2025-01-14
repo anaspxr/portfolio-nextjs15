@@ -1,22 +1,32 @@
 export const projects = [
   {
-    name: "Comfort Craft",
-    description:
-      "A furniture E-commerce web application that allows users to view and purchase furniture items. Streamlined checkout process with payment integration with.",
-    image: "/project-images/comfortcraft.png",
-    links: {
-      github: "https://github.com/anaspxr/e-commerce-with-redux",
-      live: "https://comfortcraft.vercel.app/",
-    },
-  },
-  {
     name: "DOQUE",
     description:
-      "A comprehensive project management web application that allows users to create, assign, and track tasks.",
+      "Comprehensive project management system featuring streamlined capabilities for organizing their projects and tracking tasks and project status within customizable spaces, enhancing user workflow efficiency by significant margins.",
     image: "/project-images/doque.png",
     links: {
       github: "https://github.com/anaspxr/project-doque",
       live: "https://doque.vercel.app/",
+    },
+  },
+  {
+    name: "Reddit Clone",
+    description:
+      "Feature-rich Reddit clone using the Next.js and express.js, focusing on user-generated content, community creation, and seamless interaction.",
+    image: "/project-images/reddit-clone.png",
+    links: {
+      github: "https://github.com/anaspxr/reddit-clone-client",
+      live: "https://reddit-clone.anasp.me",
+    },
+  },
+  {
+    name: "Comfort Craft",
+    description:
+      "A furniture e-commerce platform featuring product browsing, cart, wishlist, secure Stripe payment processing, and an admin interface for managing users, products, and orders.",
+    image: "/project-images/comfortcraft.png",
+    links: {
+      github: "https://github.com/anaspxr/e-commerce-with-redux",
+      live: "https://comfortcraft.vercel.app/",
     },
   },
   {
@@ -35,7 +45,7 @@ export const projects = [
     image: "/project-images/ui-designs.png",
     links: {
       github: "https://github.com/anaspxr/cool-ui-designs",
-      live: "https://cool-ui-designs.vercel.app/",
+      live: "https://cool-ui-designs.vercel.app/parallaxslider",
     },
   },
 ];
