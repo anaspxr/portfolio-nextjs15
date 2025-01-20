@@ -89,8 +89,8 @@ export default function ContactForm() {
       <div className="mb-4">
         <label
           htmlFor="name"
-          className={`block text-sm font-bold mb-2 ${
-            errors.name ? "text-red-500" : ""
+          className={`block text-sm font-bold mb-1 ${
+            touched.name && errors.name ? "text-red-500" : ""
           }`}>
           Name
         </label>
@@ -102,8 +102,8 @@ export default function ContactForm() {
           onChange={handleChange}
           value={values.name}
           onBlur={handleBlur}
-          className={`shadow border rounded w-full py-2 px-3 bg-violet-950 bg-opacity-20  ${
-            errors.name && touched.name ? "border-red-500" : ""
+          className={`shadow border  rounded w-full py-2 px-3 bg-violet-950 bg-opacity-10  ${
+            errors.name && touched.name ? "border-red-500" : "border-violet-950"
           }`}
         />
         {errors.name && touched.name && (
@@ -113,8 +113,8 @@ export default function ContactForm() {
       <div className="mb-4">
         <label
           htmlFor="email"
-          className={`block text-sm font-bold mb-2 ${
-            errors.email ? "text-red-500" : ""
+          className={`block text-sm font-bold mb-1 ${
+            touched.email && errors.email ? "text-red-500" : ""
           }`}>
           Email
         </label>
@@ -126,8 +126,10 @@ export default function ContactForm() {
           onBlur={handleBlur}
           onChange={handleChange}
           value={values.email}
-          className={`shadow border rounded w-full py-2 px-3 bg-violet-950 bg-opacity-20 ${
-            errors.email && touched.email ? "border-red-500" : ""
+          className={`shadow border rounded w-full py-2 px-3 bg-violet-950 bg-opacity-10 ${
+            errors.email && touched.email
+              ? "border-red-500"
+              : "border-violet-950"
           }`}
         />
         {errors.email && touched.email && (
@@ -137,8 +139,8 @@ export default function ContactForm() {
       <div className="mb-4">
         <label
           htmlFor="message"
-          className={`block text-sm font-bold mb-2 ${
-            errors.message ? "text-red-500" : ""
+          className={`block text-sm font-bold mb-1 ${
+            touched.message && errors.message ? "text-red-500" : ""
           }`}>
           Message
         </label>
@@ -149,15 +151,17 @@ export default function ContactForm() {
           onChange={handleChange}
           onBlur={handleBlur}
           value={values.message}
-          className={`shadow border rounded w-full py-2 px-3 bg-violet-950 bg-opacity-20 ${
-            errors.message && touched.message ? "border-red-500" : ""
+          className={`shadow border rounded w-full py-2 px-3 bg-violet-950 bg-opacity-10 ${
+            errors.message && touched.message
+              ? "border-red-500"
+              : "border-violet-950"
           }`}
         />
         {errors.message && touched.message && (
           <p className="text-red-500 text-xs  mt-1">{errors.message}</p>
         )}
       </div>
-      <div className="flex gap-4 flex-wrap">
+      <div className="flex gap-4 flex-wrap items-center">
         <button
           disabled={loading}
           type="submit"

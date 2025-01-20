@@ -1,4 +1,5 @@
 import ContactForm from "../contact-form";
+import HeroSocialLinks from "../ui/HeroSocialLinks";
 
 export default function Contact() {
   return (
@@ -8,6 +9,9 @@ export default function Contact() {
       <h2 className="text-3xl text-center mb-2">Contact Me</h2>
       <div
         className={`mb-8 h-1 w-40 m-auto bg-violet-800 transition-[width] duration-700 ease-in-out`}></div>
+      <div className="flex justify-center my-4">
+        <HeroSocialLinks />
+      </div>
       <ContactForm />
     </section>
   );
