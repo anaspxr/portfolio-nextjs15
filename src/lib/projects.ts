@@ -48,4 +48,13 @@ export const projects = [
       live: "https://cool-ui-designs.vercel.app/parallaxslider",
     },
   },
+  {
+    name: `"Whack a mole" Game`,
+    description: `Included it here because it is a fun reminder that "Even the Simplest Games Require Solid Fundamentals!! This was one of my first projects and it was a great learning experience!"`,
+    image: "/project-images/whack-a-mole.png",
+    links: {
+      github: "https://github.com/anaspxr/Whack-A-Mole",
+      live: "http://whack-a-mole.anasp.me",
+    },
+  },
 ];
