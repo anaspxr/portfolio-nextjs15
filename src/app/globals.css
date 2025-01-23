@@ -29,3 +29,64 @@ body {
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
+
+.neon-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensure it's behind the content */
+  pointer-events: none; /* Prevent interaction with the background */
+}
+
+.neon-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: rgba(44, 2, 77, 0.67); /* Purple fog */
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: pulse 6s ease-in-out infinite, move 10s ease-in-out infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+  25% {
+    top: 40%;
+    left: 60%;
+  }
+  50% {
+    top: 60%;
+    left: 40%;
+  }
+  75% {
+    top: 30%;
+    left: 30%;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}

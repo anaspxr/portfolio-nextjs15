@@ -21,6 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${poppins.className} antialiased h-full`}>
+        <div className="neon-background">
+          <div className="neon-circle"></div>
+        </div>
         {children}
         <ScrollToTop />
       </body>
