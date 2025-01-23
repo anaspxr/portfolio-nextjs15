@@ -104,4 +104,11 @@ export const skills = [
       "A UI library with a collection of beautifully designed customizable components.",
     link: "https://shadcn.dev/",
   },
+  {
+    name: "Socket.io",
+    icon: "/icons/socket-io.png",
+    description:
+      "Socket.IO is an event-driven library for real-time web applications.",
+    link: "https://socket.io/",
+  },
 ];
