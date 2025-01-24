@@ -11,7 +11,22 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Anas P - Fullstack developer",
-  description: "Full stack web developer based in Kerala, India.",
+  description:
+    "Full stack web developer based in Kerala, India. Specializing in MERN stack and Next.js. Skilled in building scalable and high performant web applications using modern technologies like React, Next.js, Node.js, Express, MongoDB, and more.",
+  openGraph: {
+    title: "Anas P | Fullstack developer",
+    description: "Full stack web developer based in Kerala, India.",
+    url: "https://anasp.me",
+    images: [
+      {
+        url: "/preview-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ANAS P",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
