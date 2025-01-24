@@ -95,14 +95,14 @@ export const skills = [
     icon: "/icons/tanstack-query.png",
     description:
       "Powerful asynchronous state management, server-state utilities and data fetching for the web.",
-    link: "https://tanstack.com/query/latest",
+    link: "https://tanstack.com",
   },
   {
     name: "Shadcn UI",
     icon: "/icons/shadcn.png",
     description:
       "A UI library with a collection of beautifully designed customizable components.",
-    link: "https://shadcn.dev/",
+    link: "https://ui.shadcn.com",
   },
   {
     name: "Socket.io",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import ScrollToTop from "@/components/ui/scroll-to-top";
+import AnimatedCursor from "react-animated-cursor";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,6 +27,22 @@ export default function RootLayout({
         </div>
         {children}
         <ScrollToTop />
+        <AnimatedCursor
+          color="109, 73, 209" // Lavenderish color (R, G, B)
+          innerSize={8} // Inner circle size
+          outerSize={30} // Outer circle size
+          innerScale={1} // Inner scale on hover
+          outerScale={1.5} // Outer scale on hover
+          outerAlpha={0.3} // Outer circle transparency
+          innerStyle={{
+            backgroundColor: "rgb(109, 73, 209)", // Lavender inner circle
+            mixBlendMode: "normal",
+          }}
+          outerStyle={{
+            backgroundColor: "rgba(159, 123, 239, 0.3)", // Light lavender outer circle
+            mixBlendMode: "lighten",
+          }}
+        />
       </body>
     </html>
   );
